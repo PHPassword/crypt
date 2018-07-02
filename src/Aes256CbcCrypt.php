@@ -3,7 +3,7 @@
 namespace PHPassword\Crypt;
 
 
-class Aes256CbcCrypt
+class Aes256CbcCrypt implements CryptInterface
 {
     /**
      * @var string
