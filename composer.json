@@ -1,0 +1,13 @@
+{
+    "name": "phpassword/crypt",
+    "description": "Crypting library for PHPassword",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Phillip Schleicher",
+            "email": "the@phizzl.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
