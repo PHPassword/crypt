@@ -2,6 +2,7 @@
     "name": "phpassword/crypt",
     "description": "Crypting library for PHPassword",
     "type": "library",
+    "licence": "GPL-3.0",
     "authors": [
         {
             "name": "Phillip Schleicher",
