@@ -14,4 +14,12 @@ class Aes256CbcCryptTest extends TestCase
 
         $this->assertSame($testString, $crypt->decrypt($testPassword, $encrypted));
     }
+
+    public function testDecryptFail()
+    {
+        $crypt = new Aes256CbcCrypt();
+        $encrypted = $crypt->encrypt('test', 'My string to test');
+        $this->expectException(RuntimeException::class);
+        $crypt->decrypt('wrongPassword', $encrypted);
+    }
 }
