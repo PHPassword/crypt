@@ -17,8 +17,8 @@ class Aes256CbcCrypt implements CryptInterface
      */
     public function encrypt(string $secret, string $message) : string
     {
-        $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length(static::$encryptionMethod));
-        $encryptedMessage = openssl_encrypt($message, static::$encryptionMethod, $secret, 0, $iv);
+        $iv = openssl_random_pseudo_bytes(openssl_cipher_iv_length(self::$encryptionMethod));
+        $encryptedMessage = openssl_encrypt($message, self::$encryptionMethod, $secret, 0, $iv);
 
         if($encryptedMessage === false){
             throw new \RuntimeException('Encryption failed');
@@ -38,7 +38,7 @@ class Aes256CbcCrypt implements CryptInterface
         $iv = base64_decode($encryptedMessageParts[1]);
         $encryptedMessage = $encryptedMessageParts[0];
 
-        $message = openssl_decrypt($encryptedMessage, static::$encryptionMethod, $secret, 0, $iv);
+        $message = openssl_decrypt($encryptedMessage, self::$encryptionMethod, $secret, 0, $iv);
 
         if($message === false){
             throw new \RuntimeException('Decryption failed');
