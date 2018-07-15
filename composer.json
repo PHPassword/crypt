@@ -11,7 +11,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "lib-openssl": "1.0.2.15",
+        "lib-openssl": "*",
         "php": "^7.1"
     },
     "require-dev": {
