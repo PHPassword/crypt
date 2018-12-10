@@ -2,8 +2,6 @@
 
 use PHPassword\Crypt\Aes256CbcCrypt;
 use PHPassword\Crypt\CryptFacade;
-use PHPassword\Crypt\CryptFactory;
-use PHPassword\Crypt\CryptInterface;
 use PHPassword\Locator\Locator;
 use PHPassword\Locator\LocatorParameter;
 use PHPassword\Locator\Proxy\LocatorProxyFactory;
