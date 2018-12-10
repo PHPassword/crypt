@@ -2,7 +2,6 @@
     "name": "phpassword/crypt",
     "description": "Crypting library for PHPassword",
     "type": "library",
-    "licence": "GPL-3.0",
     "authors": [
         {
             "name": "Phillip Schleicher",
@@ -11,8 +10,9 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "lib-openssl": "*",
-        "php": "^7.1"
+        "ext-openssl": "*",
+        "php": "^7.1",
+        "phpassword/locator": ">=1.0.2"
     },
     "require-dev": {
         "phpunit/phpunit": "7"
